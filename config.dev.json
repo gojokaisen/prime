@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "",
-    "password": "",
+    "email": "khumbomwantende@gmail.com",
+    "password": "smartlocking2700",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -9,7 +9,7 @@
     "intervalGetNewCookie": 1440,
     "notes": "time the system automatically retrieves new cookies from email/password, unit is minute, if you set null, the system will not automatically retrieve new cookies, it saves you from having to manually change your cookie every time it expires. recommended set to 1440 (1day) or 4320 (3day).TO BE ABLE TO USE THIS FEATURE YOU NEED TO ENTER THE ACCOUNT PASSWORD ABOVE"
   },
-  "antiInbox": false,
+  "antiInbox": true,
   "language": "en",
   "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
   "adminOnly": {
@@ -45,7 +45,7 @@
     "type": "sqlite",
     "uriMongodb": "",
     "autoSyncWhenStart": false,
-    "autoRefreshThreadInfoFirstTime": true,
+    "autoRefreshThreadInfoFirstTime": false,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
   },
   "timeZone": "Asia/Dhaka",
@@ -92,12 +92,12 @@
     "ignoreEvents": "",
     "notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
   },
-  "autoRefreshFbstate": true,
+  "autoRefreshFbstate": false,
   "autoReloginWhenChangeAccount": false,
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
     "enable": true,
-    "timeRestart": 36000,
+    "timeRestart": 360000,
     "delayAfterStopListening": 2000,
     "logNoti": true,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
@@ -142,7 +142,7 @@
     "presence": false
   },
   "optionsFca": {
-    "forceLogin": true,
+    "forceLogin": false,
     "listenEvents": true,
     "updatePresence": true,
     "listenTyping": true,
